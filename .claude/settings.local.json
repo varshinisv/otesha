@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(file /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/*)",
+      "Bash(mkdir -p /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/images)",
+      "Bash(mkdir -p /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/css)",
+      "Bash(mkdir -p /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/js)",
+      "Bash(cp \"Selected 1.jpg\" images/1.jpg)",
+      "Bash(cp \"Selected 2.jpg\" images/2.jpg)",
+      "Bash(cp \"Selected 3.jpg\" images/3.jpg)",
+      "Bash(cp \"Selected 4.jpg\" images/4.jpg)",
+      "Bash(cp \"Selected 5.jpg\" images/5.jpg)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(ls -la /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/index.html /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/css/style.css /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/js/main.js /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/images/*.jpg)",
+      "Bash(cp /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/index.html /tmp/otesha-preview/index.html)",
+      "Bash(cp /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/images/otesha-logo-sage-dark-2.png /tmp/otesha-preview/images/otesha-logo-sage-dark-2.png)",
+      "Bash(cp /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/css/style.css /tmp/otesha-preview/css/style.css)",
+      "Bash(cp /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/js/main.js /tmp/otesha-preview/js/main.js)",
+      "Bash(lsof -ti:8080)",
+      "Bash(xargs kill)",
+      "Bash(cp -r /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/index.html /tmp/otesha-preview/index.html)",
+      "Bash(cp /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/articles/*.html /tmp/otesha-preview/articles/)",
+      "Bash(for f in *.html)",
+      "Bash(do sed -i '' 's|>Learning</a>|>Learning Journey</a>|' \"$f\")",
+      "Bash(sed -i '' 's|>Practical</a>|>Practical Matters</a>|' \"$f\")",
+      "Bash(done)",
+      "Bash(do sed -i '' 's|>Learning Journey</a>|>Our Learning Journey</a>|' \"$f\")",
+      "Bash(do sed -i '' 's|../images/logo-light.png|../images/otesha-logo-sage-dark-2.png|' \"$f\")",
+      "Bash(python3 -c \":*)",
+      "Bash(pip3 install Pillow)",
+      "Bash(cp -r /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/articles/ /tmp/otesha-preview/articles/)",
+      "Bash(cp /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/images/otesha-logo-trimmed.png /tmp/otesha-preview/images/)",
+      "Bash(git init)",
+      "Bash(git add index.html css/style.css js/main.js images/ articles/ CLAUDE.md .claude/)"
+    ]
+  }
+}
