@@ -518,8 +518,8 @@ footer { background: var(--forest); color: var(--cream); padding: 5rem 3rem 3rem
   margin: 0 auto;
 }
 .footer-col h4 {
-  font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase;
-  opacity: 0.5; margin-bottom: 1.2rem; font-weight: 400;
+  font-size: 0.95rem; letter-spacing: 0.2em; text-transform: uppercase;
+  opacity: 0.85; margin-bottom: 1.2rem; font-weight: 600;
 }
 .footer-col p, .footer-col a {
   font-size: 0.87rem; opacity: 0.65; line-height: 1.9;
