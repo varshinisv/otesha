@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summer Camp &mdash; The Summer Naturalists | Otesha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .camp-page { padding: 6rem 1.5rem 3rem; max-width: 800px; margin: 0 auto; }
+  .camp-page img {
+    width: 100%; height: auto; display: block;
+    border-radius: 4px;
+    box-shadow: 0 2px 16px rgba(44,74,46,0.10);
+    margin-bottom: 2rem;
+  }
+  .camp-back {
+    display: inline-block; margin-bottom: 2rem;
+    font-family: 'Jost', sans-serif; font-size: 0.78rem;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--forest); text-decoration: none; font-weight: 500;
+  }
+  .camp-back:hover { color: var(--terracotta); }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainnav">
+  <a href="index.html" class="nav-logo">
+    <img src="images/otesha-logo-trimmed.png" alt="Otesha">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#learning">Our Learning Journey</a></li>
+    <li><a href="index.html#rhythm">Daily Rhythm</a></li>
+    <li><a href="index.html#practical">Practical Matters</a></li>
+    <li><a href="index.html#admissions">Admissions</a></li>
+    <li><a href="index.html#further">Further Reading</a></li>
+    <li><a href="summer-camp.html" class="nav-highlight">Summer Camp</a></li>
+  </ul>
+</nav>
+
+<div class="camp-page">
+  <a href="index.html" class="camp-back">&larr; Back to Home</a>
+  <img src="images/SummerCampFlyer.jpeg" alt="The Summer Naturalists — programme overview">
+  <img src="images/SummerCampDetails1.jpeg" alt="The Summer Naturalists — about the programme">
+  <img src="images/SummerCampDetails2.jpeg" alt="The Summer Naturalists — costs and themes">
+  <img src="images/SummerCampDetails3.jpeg" alt="The Summer Naturalists — activities">
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Visit Us</h4>
+      <p>169, 2nd Main Rd, Medar Block,<br>Yadavagiri, Mysuru,<br>Karnataka 570020</p>
+      <a href="https://maps.app.goo.gl/h4sqsJqiCJtzFZfG7" target="_blank" rel="noopener">View on Google Maps &rarr;</a>
+    </div>
+    <div class="footer-center">
+      <img src="images/otesha-logo-trimmed.png" alt="Otesha" class="footer-logo">
+      <p class="footer-tagline">To plant a seed and watch it grow &mdash; to nurture a dream.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Get in Touch</h4>
+      <a href="mailto:office@otesha.in">office@otesha.in</a>
+      <a href="tel:+919986016741">+91 99860 16741</a>
+      <a href="tel:+919611982704">+91 96119 82704</a>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 Otesha. All rights reserved.</div>
+</footer>
+
+<script>
+// Nav scroll effect
+window.addEventListener('scroll', function() {
+  document.getElementById('mainnav').classList.toggle('scrolled', window.scrollY > 80);
+});
+</script>
+</body>
+</html>

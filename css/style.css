@@ -6,13 +6,14 @@
   /* Editorial palette (primary) */
   --cream: #f5f0e8;
   --paper: #faf7f2;
-  --forest: #2c4a2e;
+  --forest: #6B8F71;
   --sage: #618555;
   --sage-light: #9ab89d;
   --terracotta: #8b4a2e;
   --ink: #1e2e1f;
   --muted: #7a8c7b;
   --warm-border: rgba(44,74,46,0.12);
+  --dark-forest: #1e4024;
 
   /* Hero-specific (from classical garden) */
   --sage-deeper: #334428;
@@ -49,10 +50,13 @@ nav {
 .nav-links { display: flex; gap: 1.4rem; list-style: none; }
 .nav-links a {
   font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap;
-  color: var(--forest); text-decoration: none; font-weight: 400;
+  color: var(--forest); text-decoration: none; font-weight: 500;
   transition: color 0.2s;
 }
 .nav-links a:hover { color: var(--terracotta) !important; }
+.nav-links a.nav-highlight {
+  color: var(--forest); font-weight: 500;
+}
 
 /* ─── HERO (full-bleed slideshow) ─── */
 .hero {
@@ -283,7 +287,7 @@ p { font-size: 0.93rem; line-height: 1.9; opacity: 0.78; }
 .section-alt .person { background: var(--cream); }
 .person-name {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.5rem; color: var(--forest); margin-bottom: 0.25rem; font-weight: 400;
+  font-size: 1.5rem; color: var(--dark-forest); margin-bottom: 0.25rem; font-weight: 400;
 }
 .person-aka {
   font-size: 0.75rem; color: var(--sage); letter-spacing: 0.08em;
@@ -326,7 +330,7 @@ p { font-size: 0.93rem; line-height: 1.9; opacity: 0.78; }
 .area:nth-child(3n) { border-right: none; }
 .area-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.25rem; color: var(--forest); margin-bottom: 0.7rem; font-weight: 400;
+  font-size: 1.25rem; color: var(--dark-forest); margin-bottom: 0.7rem; font-weight: 400;
 }
 .area p { font-size: 0.85rem; line-height: 1.8; }
 
@@ -373,7 +377,7 @@ p { font-size: 0.93rem; line-height: 1.9; opacity: 0.78; }
 }
 .rhythm-label {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.2rem; color: var(--forest); font-weight: 400;
+  font-size: 1.2rem; color: var(--dark-forest); font-weight: 400;
   font-style: italic; padding-top: 0.1rem;
 }
 .rhythm-body p { font-size: 0.9rem; line-height: 1.85; margin-bottom: 0.6rem; }
@@ -388,7 +392,7 @@ p { font-size: 0.93rem; line-height: 1.9; opacity: 0.78; }
 }
 .rhythm-sub-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1rem; color: var(--forest); margin-bottom: 0.4rem;
+  font-size: 1rem; color: var(--dark-forest); margin-bottom: 0.4rem;
   font-weight: 400; font-style: italic;
 }
 .rhythm-sub-block p { font-size: 0.83rem; line-height: 1.7; }
@@ -398,7 +402,7 @@ p { font-size: 0.93rem; line-height: 1.9; opacity: 0.78; }
 .pblock { margin-top: 2.5rem; }
 .pblock h3 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.35rem; color: var(--forest); font-weight: 400;
+  font-size: 1.35rem; color: var(--dark-forest); font-weight: 400;
   margin-bottom: 0.7rem;
   border-bottom: 1px solid var(--warm-border); padding-bottom: 0.6rem;
 }
@@ -439,7 +443,7 @@ p { font-size: 0.93rem; line-height: 1.9; opacity: 0.78; }
 .fr-link:hover .fr-arrow { color: var(--terracotta); }
 .fr-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.3rem; color: var(--forest); font-weight: 400;
+  font-size: 1.3rem; color: var(--dark-forest); font-weight: 400;
   transition: color 0.3s;
 }
 .fr-arrow {
