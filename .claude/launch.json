@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "otesha-site",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["/tmp/otesha_server.py"],
+      "runtimeExecutable": "/usr/bin/ruby",
+      "runtimeArgs": ["/tmp/otesha_server.rb"],
       "port": 8080
     }
   ]

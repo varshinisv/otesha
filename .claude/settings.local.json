@@ -31,7 +31,18 @@
       "Bash(cp -r /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/articles/ /tmp/otesha-preview/articles/)",
       "Bash(cp /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/images/otesha-logo-trimmed.png /tmp/otesha-preview/images/)",
       "Bash(git init)",
-      "Bash(git add index.html css/style.css js/main.js images/ articles/ CLAUDE.md .claude/)"
+      "Bash(git add index.html css/style.css js/main.js images/ articles/ CLAUDE.md .claude/)",
+      "Bash(git commit:*)",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//usr/local/bin/**)",
+      "Bash(/usr/bin/ruby -run -e httpd . -p 8080)",
+      "Bash(ls /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/Selected*.jpg)",
+      "Bash(ls /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/images/summer-camp*)",
+      "Bash(ls /Users/varshini/Documents/Varshini/Otesha/Website/WebsiteCC1/images/summer*)",
+      "Bash(git add css/style.css index.html summer-camp.html images/SummerCampFlyer.jpeg images/SummerCampDetails1.jpeg images/SummerCampDetails2.jpeg images/SummerCampDetails3.jpeg)",
+      "Bash(git remote add origin https://github.com/varshinisv/otesha.git)",
+      "Bash(git branch -m master main)",
+      "Bash(git push -u origin main)"
     ]
   }
 }
