@@ -293,7 +293,7 @@
     <h2>Come <em>meet us</em></h2>
     <div class="admissions-wrap">
       <p>If you would like to know more about us, do write to us &mdash; or, even better, come meet us in person. We would be happy to show you around the school, answer your questions, and explore the possibility of your child joining us on their journey here.</p>
-      <a href="mailto:hello@otesha.in" class="contact-btn">Write to us</a>
+      <a href="mailto:office@otesha.com" class="contact-btn">Write to us</a>
     </div>
   </div>
 </div>
@@ -353,6 +353,84 @@
   </div>
   <div class="footer-bottom">&copy; 2026 Otesha. All rights reserved.</div>
 </footer>
+
+<!-- ADMISSIONS POPUP -->
+<div class="popup-overlay" id="admPopup">
+  <div class="popup-box">
+    <button class="popup-close" id="popupClose" aria-label="Close">&times;</button>
+    <span class="section-label" style="margin-bottom: 0.5rem;">Admissions Open</span>
+    <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 1.8rem; color: var(--dark-forest); margin-bottom: 0.6rem;">
+      Admissions for <em>June 2026</em> have started
+    </h2>
+    <p style="font-size: 0.93rem; line-height: 1.8; opacity: 0.78; margin-bottom: 1.8rem;">
+      We are now accepting enquiries for the upcoming academic year. Come meet us, see the school, and explore the possibility of your child joining Otesha.
+    </p>
+    <a href="#admissions" class="contact-btn" id="popupCta">Get in touch</a>
+  </div>
+</div>
+
+<style>
+  .popup-overlay {
+    position: fixed; inset: 0; z-index: 9999;
+    background: rgba(30,46,31,0.45);
+    backdrop-filter: blur(4px);
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.4s ease;
+  }
+  .popup-overlay.show {
+    opacity: 1; pointer-events: auto;
+  }
+  .popup-box {
+    background: var(--paper);
+    border: 1px solid var(--warm-border);
+    border-radius: 6px;
+    max-width: 520px; width: 90%;
+    padding: 3rem 2.5rem;
+    text-align: center;
+    position: relative;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+    box-shadow: 0 12px 48px rgba(44,36,22,0.15);
+  }
+  .popup-overlay.show .popup-box {
+    transform: translateY(0);
+  }
+  .popup-close {
+    position: absolute; top: 1rem; right: 1.2rem;
+    background: none; border: none; cursor: pointer;
+    font-size: 1.6rem; color: var(--muted);
+    line-height: 1; padding: 0.2rem;
+    transition: color 0.3s;
+  }
+  .popup-close:hover { color: var(--terracotta); }
+  @media (max-width: 600px) {
+    .popup-box { padding: 2.2rem 1.5rem; }
+  }
+</style>
+
+<script>
+  // Show popup after a short delay
+  setTimeout(function() {
+    document.getElementById('admPopup').classList.add('show');
+  }, 1500);
+  // Close on X button
+  document.getElementById('popupClose').addEventListener('click', function() {
+    document.getElementById('admPopup').classList.remove('show');
+  });
+  // Close on overlay click (outside the box)
+  document.getElementById('admPopup').addEventListener('click', function(e) {
+    if (e.target === this) this.classList.remove('show');
+  });
+  // Get in touch button — close popup, then scroll to admissions
+  document.getElementById('popupCta').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('admPopup').classList.remove('show');
+    setTimeout(function() {
+      document.getElementById('admissions').scrollIntoView({ behavior: 'smooth' });
+    }, 400);
+  });
+</script>
 
 <script src="js/main.js"></script>
 </body>
