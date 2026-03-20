@@ -3,25 +3,131 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Summer Camp &mdash; The Summer Naturalists | Otesha</title>
+<title>Summer School &mdash; The Summer Naturalists | Otesha</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <style>
-  .camp-page { padding: 6rem 1.5rem 3rem; max-width: 800px; margin: 0 auto; }
-  .camp-page img {
-    width: 100%; height: auto; display: block;
-    border-radius: 4px;
-    box-shadow: 0 2px 16px rgba(44,74,46,0.10);
-    margin-bottom: 2rem;
+  /* Page-level botanical background — fixed frame */
+  .camp-page-bg {
+    background-image: url('images/camp-background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--paper);
+  }
+
+  .camp-back-wrap {
+    max-width: 1160px; margin: 0 auto;
+    padding: 5.5rem 3rem 0;
   }
   .camp-back {
-    display: inline-block; margin-bottom: 2rem;
+    display: inline-block;
     font-family: 'Jost', sans-serif; font-size: 0.78rem;
     letter-spacing: 0.06em; text-transform: uppercase;
     color: var(--forest); text-decoration: none; font-weight: 500;
   }
   .camp-back:hover { color: var(--terracotta); }
+
+  /* Content sections — transparent so botanical bg shows through */
+  .camp-section {
+    position: relative;
+    padding: 5rem 3rem;
+  }
+  .camp-section .inner {
+    position: relative;
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+
+  /* Subtle divider between sections */
+  .camp-section + .camp-section {
+    border-top: 1px solid var(--warm-border);
+  }
+
+  /* Hero intro details */
+  .camp-hero-details {
+    text-align: center;
+    margin: 2.5rem 0;
+  }
+  .camp-hero-details .camp-date {
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem; font-weight: 500;
+    color: var(--dark-forest);
+    margin-bottom: 0.3rem;
+  }
+  .camp-hero-details .camp-schedule {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem; font-weight: 400;
+    color: var(--dark-forest);
+    margin-bottom: 1.2rem;
+  }
+  .camp-hero-details .camp-info {
+    font-size: 0.93rem; line-height: 1.9;
+    opacity: 0.78;
+    margin-bottom: 0.3rem;
+  }
+  .camp-hero-details .camp-pricing {
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem; font-weight: 500;
+    color: var(--terracotta);
+    margin-top: 1.5rem;
+  }
+
+  /* Content blocks */
+  .camp-block { margin-top: 2.5rem; }
+  .camp-block h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem; color: var(--dark-forest); font-weight: 400;
+    margin-bottom: 0.7rem;
+    border-bottom: 1px solid var(--warm-border); padding-bottom: 0.6rem;
+  }
+  .camp-block p {
+    font-size: 0.93rem; line-height: 1.9; opacity: 0.78;
+  }
+  .camp-block ul {
+    padding-left: 1.3rem; margin: 0.8rem 0 1.2rem;
+  }
+  .camp-block li {
+    font-size: 0.93rem; line-height: 1.9; opacity: 0.78;
+    margin-bottom: 0.3rem;
+  }
+
+  /* Contact CTA */
+  .camp-cta {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--warm-border);
+  }
+  .camp-cta p {
+    font-size: 1rem; line-height: 1.9;
+    opacity: 0.85;
+  }
+  .camp-cta .camp-contact {
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem; font-weight: 500;
+    color: var(--dark-forest);
+  }
+  .camp-cta .camp-collab {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-top: 2rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .camp-section { padding: 3.5rem 1.5rem; }
+    .camp-back-wrap { padding: 5.5rem 1.5rem 0; }
+    .camp-page-bg {
+      background-attachment: scroll;
+      background-size: 100% auto;
+      background-position: top center;
+    }
+  }
 </style>
 </head>
 <body>
@@ -38,17 +144,109 @@
     <li><a href="index.html#practical">Practical Matters</a></li>
     <li><a href="index.html#admissions">Admissions</a></li>
     <li><a href="index.html#further">Further Reading</a></li>
-    <li><a href="summer-camp.html" class="nav-highlight">Summer Camp</a></li>
+    <li><a href="summer-camp.html" class="nav-highlight">Summer School</a></li>
   </ul>
 </nav>
 
-<div class="camp-page">
+<!-- Botanical background wrapper -->
+<div class="camp-page-bg">
+
+<div class="camp-back-wrap">
   <a href="index.html" class="camp-back">&larr; Back to Home</a>
-  <img src="images/SummerCampFlyer.jpeg" alt="The Summer Naturalists — programme overview">
-  <img src="images/SummerCampDetails1.jpeg" alt="The Summer Naturalists — about the programme">
-  <img src="images/SummerCampDetails2.jpeg" alt="The Summer Naturalists — costs and themes">
-  <img src="images/SummerCampDetails3.jpeg" alt="The Summer Naturalists — activities">
 </div>
+
+<!-- SECTION 1: Hero / Intro -->
+<div class="camp-section">
+  <div class="inner" style="text-align: center;">
+    <span class="section-label">Summer School</span>
+    <h2>The Summer <em>Naturalists</em></h2>
+    <p class="lead" style="max-width: 540px; margin: 0 auto;">Welcome to this year&rsquo;s summer where children spend slow mornings outdoors, exploring nature around us.</p>
+    <div class="camp-hero-details">
+      <div class="camp-date">6 April to 22 May</div>
+      <div class="camp-schedule">Monday to Friday &nbsp;|&nbsp; 9 AM &ndash; 12 PM</div>
+      <p class="camp-info">A 7-week programme exploring a new theme each week.<br>Join us for as many weeks as you like.</p>
+      <div class="camp-pricing">3&ndash;8 years &nbsp;|&nbsp; &#8377;3000/- per week</div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 2: About -->
+<div class="camp-section">
+  <div class="inner">
+    <span class="section-label">About</span>
+    <h2>Who <em>we are</em></h2>
+    <div class="camp-block">
+      <h3>About Us</h3>
+      <p>Otesha is a school based out of Mysore and Nature Classrooms is a programme that brings nature learning to everyday education.</p>
+    </div>
+    <div class="camp-block">
+      <h3>About the Programme</h3>
+      <p>The summer school programme is designed as a joyful, experiential introduction to the natural world. Through exploration, play, movement, and creative expression, children will spend their mornings discovering the many wonders of nature around them.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 3: Costs & Themes -->
+<div class="camp-section">
+  <div class="inner">
+    <div class="camp-block" style="margin-top: 0;">
+      <h3>Break Up of the Costs</h3>
+      <p>The course fee covers the costs for:</p>
+      <ul>
+        <li>Designing the programme</li>
+        <li>Nature educators</li>
+        <li>Materials</li>
+        <li>Meals (a snack and a beverage each day)</li>
+      </ul>
+    </div>
+    <div class="camp-block">
+      <span class="section-label">Themes</span>
+      <h3 style="border: none; padding-bottom: 0;"></h3>
+      <p>Each week will focus on simple and relatable themes from nature that children can easily observe and explore in their immediate surroundings. The themes include:</p>
+      <ul>
+        <li>Flowers</li>
+        <li>Leaves</li>
+        <li>Seeds</li>
+        <li>Insects</li>
+        <li>Birds</li>
+        <li>Animals</li>
+        <li>Colors &ndash; Textures &ndash; Patterns</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 4: Activities -->
+<div class="camp-section">
+  <div class="inner">
+    <span class="section-label">Activities</span>
+    <h2>What children <em>will do</em></h2>
+    <div class="camp-block">
+      <p>Children will explore these themes through a variety of hands-on activities such as:</p>
+      <ul>
+        <li>Creating birds using natural materials</li>
+        <li>Observing nooks and corners in and around the school to discover life around</li>
+        <li>Making seed crowns</li>
+        <li>Creating clay models inspired by nature</li>
+        <li>Nature movements and role-play activities</li>
+        <li>Leaf and bark stencils and insect-inspired art</li>
+        <li>Using magnifying hand lenses to discover insects through a game of bingo</li>
+        <li>Flower pressing and botanical art</li>
+        <li>Nature handprints</li>
+        <li>Making colours using natural materials</li>
+      </ul>
+      <p>Through these experiences, children will slow down, look closely, and nurture a sense of wonder, curiosity and connection with the living world around them.</p>
+    </div>
+    <div class="camp-cta">
+      <p>To know more, do get in touch with us and we are happy to talk.</p>
+      <p class="camp-contact">Get in touch with Naveen at <a href="tel:+919986016741" style="color: var(--dark-forest); text-decoration: none;">9986016741</a></p>
+      <p class="camp-collab">In collaboration with Nature Classrooms</p>
+      <img src="images/NC_Logo.png" alt="Nature Classrooms" style="display: block; margin: 1.2rem auto 0; width: 140px; opacity: 0.7;">
+    </div>
+  </div>
+</div>
+
+</div><!-- end .camp-page-bg -->
 
 <!-- FOOTER -->
 <footer>
