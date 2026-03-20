@@ -428,6 +428,11 @@ p { font-size: 0.93rem; line-height: 1.9; opacity: 0.78; }
   font-weight: 400; transition: background 0.3s;
 }
 .contact-btn:hover { background: var(--sage); }
+.contact-or {
+  display: inline-block; margin: 1rem 1rem 0;
+  font-size: 0.85rem; color: var(--muted);
+  font-style: italic; vertical-align: middle;
+}
 
 /* ─── FURTHER READING (link list) ─── */
 .further-list { margin-top: 3rem; }

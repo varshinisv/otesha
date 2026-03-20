@@ -294,6 +294,8 @@
     <div class="admissions-wrap">
       <p>If you would like to know more about us, do write to us &mdash; or, even better, come meet us in person. We would be happy to show you around the school, answer your questions, and explore the possibility of your child joining us on their journey here.</p>
       <a href="mailto:office@otesha.com" class="contact-btn">Write to us</a>
+      <span class="contact-or">or</span>
+      <a href="tel:+919986016741" class="contact-btn">Call us</a>
     </div>
   </div>
 </div>
@@ -410,10 +412,13 @@
 </style>
 
 <script>
-  // Show popup after a short delay
-  setTimeout(function() {
-    document.getElementById('admPopup').classList.add('show');
-  }, 1500);
+  // Show popup once per session
+  if (!sessionStorage.getItem('admPopupShown')) {
+    setTimeout(function() {
+      document.getElementById('admPopup').classList.add('show');
+      sessionStorage.setItem('admPopupShown', '1');
+    }, 1500);
+  }
   // Close on X button
   document.getElementById('popupClose').addEventListener('click', function() {
     document.getElementById('admPopup').classList.remove('show');
