@@ -5,28 +5,57 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Role of a Teacher &mdash; Otesha</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <nav id="mainnav">
-  <a href="../index.html" class="nav-logo">
-    <img src="../images/otesha-logo-trimmed.png" alt="Otesha">
+  <a href="../index.html#hero" class="nav-logo">
+    <img src="../images/Otesha_Logo_Sage.png" alt="Otesha">
   </a>
+  <svg class="nav-botanical" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 28" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="nav-fade" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#f3f8f4" stop-opacity="0.95"/>
+        <stop offset="30%" stop-color="#f3f8f4" stop-opacity="0.5"/>
+        <stop offset="60%" stop-color="#f3f8f4" stop-opacity="0.15"/>
+        <stop offset="100%" stop-color="#f3f8f4" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <path d="M0,0 L1440,0 L1440,28 C1300,10 1100,25 900,12 C700,0 500,22 300,8 C150,0 50,18 0,10 Z" fill="url(#nav-fade)"/>
+  </svg>
   <ul class="nav-links">
-    <li><a href="../index.html#about">About</a></li>
-    <li><a href="../index.html#learning">Our Learning Journey</a></li>
-    <li><a href="../index.html#rhythm">Daily Rhythm</a></li>
-    <li><a href="../index.html#practical">Practical Matters</a></li>
-    <li><a href="../index.html#admissions">Admissions</a></li>
-    <li><a href="../index.html#further">Further Reading</a></li>
+    <li class="nav-dropdown">
+      <a href="../index.html#hero">Home</a>
+      <ul class="nav-sub">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#our-story">Our story</a></li>
+        <li><a href="../index.html#people">People</a></li>
+      </ul>
+    </li>
+    <li class="nav-dropdown">
+      <a href="../index.html#learning">Our learning journey</a>
+      <ul class="nav-sub">
+        <li><a href="../index.html#approach">Approach</a></li>
+        <li><a href="../index.html#areas">Areas of learning</a></li>
+        <li><a href="../index.html#rhythm">Daily rhythm</a></li>
+      </ul>
+    </li>
+    <li><a href="../index.html#practical">Practical matters</a></li>
+    <li class="nav-dropdown">
+      <a href="../index.html#admissions">Join us</a>
+      <ul class="nav-sub">
+        <li><a href="../index.html#admissions">Admissions</a></li>
+      </ul>
+    </li>
+    <li><a href="../index.html#further">Further reading</a></li>
+    <li><a href="../summer-school.html" class="nav-highlight">Summer school</a></li>
   </ul>
 </nav>
 
 <div class="article-page">
-  <a href="../index.html#further" class="article-back">&larr; Back to Further Reading</a>
-  <span class="section-label">Further Reading</span>
+  <a href="../index.html#further" class="article-back">&larr; Back to further reading</a>
   <h1>The role of a teacher</h1>
   <div class="article-content">
     <p>In the early years, children learn primarily through imitation. They do not learn by being told. They learn by watching &mdash; and then doing &mdash; what the adults around them do. This places an important responsibility on the teacher: to simply be &mdash; consistent, calm, purposeful.</p>
@@ -43,29 +72,44 @@
     <p>We do not test children. Assessment at school is through observation. Teachers watch children across the day &mdash; in play, at meals, during activities, in moments of conflict &mdash; and reflect on what they see. This is how we understand each child and adapt our support. It is also how we communicate with families: not with grades, but with observations of their child.</p>
     <h4>On conflict</h4>
     <p>Children need to learn to negotiate, and that means they need to be in conflict sometimes &mdash; and to find their way through it themselves. Adults in our school resist the impulse to intervene immediately. We watch. We wait. We step in only when a child genuinely cannot manage, or when safety requires it. This restraint is respect for the child&rsquo;s capacity, and it is how negotiation skills are built.</p>
-    <a href="../index.html#further" class="article-bottom-back">&larr; Back to Further Reading</a>
+    <a href="../index.html#further" class="article-bottom-back">&larr; Back to further reading</a>
   </div>
 </div>
 
 <footer>
+  <!-- Hidden SVG for footer wavy clip-path -->
+  <svg width="0" height="0" style="position:absolute;">
+    <defs>
+      <clipPath id="footer-wave-clip" clipPathUnits="objectBoundingBox">
+        <path d="M0,0.05 C0.15,0 0.3,0.12 0.5,0.03 C0.7,0 0.85,0.1 1,0.04 L1,1 L0,1 Z"/>
+      </clipPath>
+    </defs>
+  </svg>
   <div class="footer-inner">
     <div class="footer-col">
-      <h4>Visit Us</h4>
+      <h4>Visit us</h4>
       <p>169, 2nd Main Rd, Medar Block,<br>Yadavagiri, Mysuru,<br>Karnataka 570020</p>
       <a href="https://maps.app.goo.gl/h4sqsJqiCJtzFZfG7" target="_blank" rel="noopener">View on Google Maps &rarr;</a>
     </div>
     <div class="footer-center">
-      <img src="../images/otesha-logo-sage-dark-2.png" alt="Otesha" class="footer-logo">
-      <p class="footer-tagline">To plant a seed and watch it grow &mdash; to nurture a dream.</p>
+      <img src="../images/Otesha_Logo_Dark.png" alt="Otesha" class="footer-logo">
+      <p class="footer-copyright">&copy; 2026 Otesha. All rights reserved.</p>
     </div>
     <div class="footer-col">
-      <h4>Get in Touch</h4>
-      <a href="mailto:hello@otesha.in">hello@otesha.in</a>
-      <a href="mailto:admissions@otesha.in">admissions@otesha.in</a>
+      <h4>Get in touch</h4>
+      <a href="mailto:office@otesha.in">office@otesha.in</a>
+      <a href="tel:+919986016741">+91 99860 16741</a>
+      <a href="tel:+919611982704">+91 96119 82704</a>
+      <a href="https://www.instagram.com/otesha_school/" target="_blank" rel="noopener" class="ig-link" aria-label="Otesha on Instagram">
+        <svg class="ig-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <a href="https://wa.me/919986016741" target="_blank" rel="noopener" class="ig-link" aria-label="Otesha on WhatsApp">
+        <svg class="ig-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.3L2 22l4.8-1.6A11 11 0 1 0 20.5 3.5z"/><path d="M8.5 8.5c0-.5.4-1 1-1h1c.4 0 .7.2.9.6l.8 1.8c.1.3.1.6-.1.9l-.6.8a8 8 0 0 0 3.4 3.4l.8-.6c.3-.2.6-.2.9-.1l1.8.8c.4.2.6.5.6.9v1c0 .6-.5 1-1 1A9 9 0 0 1 8.5 8.5z"/></svg>
+      </a>
     </div>
   </div>
-  <div class="footer-bottom">&copy; 2026 Otesha. All rights reserved.</div>
 </footer>
 
+<script src="../js/main.js"></script>
 </body>
 </html>

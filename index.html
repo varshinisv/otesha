@@ -3,45 +3,71 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Otesha &mdash; A Heartfelt School in Mysuru</title>
+<title>Otesha</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=20260410a">
 </head>
 <body>
 
 <!-- NAV -->
 <nav id="mainnav">
-  <a href="#" class="nav-logo">
-    <img src="images/otesha-logo-trimmed.png" alt="Otesha">
+  <a href="#hero" class="nav-logo">
+    <img src="images/Otesha_Logo_Sage.png" alt="Otesha">
   </a>
+  <svg class="nav-botanical" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 28" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="nav-fade" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#f3f8f4" stop-opacity="0.95"/>
+        <stop offset="30%" stop-color="#f3f8f4" stop-opacity="0.5"/>
+        <stop offset="60%" stop-color="#f3f8f4" stop-opacity="0.15"/>
+        <stop offset="100%" stop-color="#f3f8f4" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <path d="M0,0 L1440,0 L1440,28 C1300,10 1100,25 900,12 C700,0 500,22 300,8 C150,0 50,18 0,10 Z" fill="url(#nav-fade)"/>
+  </svg>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#learning">Our Learning Journey</a></li>
-    <li><a href="#rhythm">Daily Rhythm</a></li>
-    <li><a href="#practical">Practical Matters</a></li>
-    <li><a href="#admissions">Admissions</a></li>
-    <li><a href="#further">Further Reading</a></li>
-    <li><a href="summer-school.html" class="nav-highlight">Summer School</a></li>
+    <li class="nav-dropdown">
+      <a href="#hero">Home</a>
+      <ul class="nav-sub">
+        <li><a href="#about">About Otesha</a></li>
+        <li><a href="#our-story">Our story</a></li>
+      </ul>
+    </li>
+    <li class="nav-dropdown">
+      <a href="#learning">Our learning journey</a>
+      <ul class="nav-sub">
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#areas">Areas of learning</a></li>
+        <li><a href="#rhythm">Daily rhythm</a></li>
+      </ul>
+    </li>
+    <li><a href="#practical">Practical matters</a></li>
+    <li class="nav-dropdown">
+      <a href="#admissions">Join us</a>
+      <ul class="nav-sub">
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#get-in-touch">Get in touch</a></li>
+      </ul>
+    </li>
+    <li><a href="#further">Further reading</a></li>
+    <li><a href="summer-school.html" class="nav-highlight">Summer school</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
 <section class="hero" id="hero">
   <div class="hero-slides">
-    <div class="hero-slide active"><img src="images/1.jpg" alt="Otesha school life"></div>
-    <div class="hero-slide"><img src="images/2.jpg" alt="Children exploring outdoors"></div>
-    <div class="hero-slide"><img src="images/3.jpg" alt="A thriving garden"></div>
-    <div class="hero-slide"><img src="images/4.jpg" alt="Growing alongside nature"></div>
-    <div class="hero-slide"><img src="images/5.jpg" alt="Morning at Otesha"></div>
+    <div class="hero-slide active"><img src="images/Otesha_Veranda.jpg" alt="Otesha school life"></div>
+    <div class="hero-slide"><img src="images/Otesha_JackfruitTree.jpg" alt="Jackfruit tree at Otesha"></div>
+    <div class="hero-slide"><img src="images/Otesha_Kids.jpg" alt="A thriving garden"></div>
+    <div class="hero-slide"><img src="images/Otesha_SideEntrance.jpg" alt="Otesha side entrance" class="hero-bottom"></div>
+    <div class="hero-slide"><img src="images/Otesha_MainGate.jpg" alt="Otesha main gate" class="hero-bottom"></div>
+    <div class="hero-slide"><img src="images/Otesha_Maindoor.jpg" alt="Otesha main door" class="hero-bottom"></div>
   </div>
   <div class="hero-tint"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">
-      <span class="hero-eyebrow-line"></span>
-      <span id="hero-loc">The Verandah &middot; Otesha</span>
-    </div>
-    <div class="hero-big"><span id="hero-text">Climbing, exploring, discovering &mdash; the gate is always open.</span></div>
+    <div class="hero-big"><span id="hero-text">Climbing, exploring, discovering.</span></div>
   </div>
   <div class="hero-controls">
     <div class="hero-dots" id="hero-dots">
@@ -50,6 +76,7 @@
       <div class="hdot" data-i="2"></div>
       <div class="hdot" data-i="3"></div>
       <div class="hdot" data-i="4"></div>
+      <div class="hdot" data-i="5"></div>
     </div>
     <div class="hero-nav">
       <button class="hero-btn" id="hero-prev">&#8592;</button>
@@ -59,89 +86,84 @@
   <div class="hero-scroll"><span>Scroll</span><div class="hero-scroll-line"></div></div>
 </section>
 
-<!-- WELCOME -->
+<!-- WELCOME + OUR STORY (seamless watercolor group) -->
+<div class="watercolor-group">
 <div class="welcome-section fade-up" id="about">
+  <span class="section-label">About Otesha</span>
   <div class="welcome-inner">
-    <span class="welcome-label">Welcome to</span>
-    <img src="images/otesha-logo-trimmed.png" alt="Otesha" class="welcome-logo">
+    <p class="welcome-tagline">Otesha is more than a school; it is an extension of home.</p>
     <div class="welcome-divider">
       <span class="wd-line"></span>
       <span class="wd-diamond">&#10022;</span>
       <span class="wd-line"></span>
     </div>
-    <p class="welcome-tagline">Otesha means &ldquo;to plant a seed and watch it grow&rdquo; &mdash; to nurture a dream. A learning space where children and adults grow together.</p>
+    <p class="welcome-body">Otesha means &ldquo;to plant a seed and watch it grow&rdquo; - to nurture a dream. To us, this feels like a fitting metaphor for our learning space where children and adults grow together.</p>
     <div class="welcome-divider">
       <span class="wd-line"></span>
       <span class="wd-diamond">&#10022;</span>
       <span class="wd-line"></span>
     </div>
-    <p class="welcome-body">We believe a school is a second home to any child &mdash; a place of warmth and belonging. At Otesha, our deepest intention is to celebrate childhood by creating a nurturing environment for children. A space where they can explore freely, express themselves joyfully, and grow with ease.</p>
+    <p class="welcome-body">We believe a school is a second home to any child - a place of warmth and belonging. At Otesha, our deepest intention is to celebrate childhood by creating a nurturing environment for children. A space where they can explore freely, express themselves joyfully, and grow with ease.</p>
   </div>
 </div>
 
-<!-- OUR STORY -->
-<div class="section section-alt fade-up">
+<!-- OUR STORY & THE PEOPLE -->
+<div class="section section-alt fade-up" id="our-story">
   <div class="inner">
-    <span class="section-label">Our Story</span>
-    <div class="about-grid">
-      <div class="about-body">
-        <h2>Born from a simple<br><em>need for a heartfelt school</em></h2>
-        <p>Otesha was born out of a simple thought in 2025 &mdash; a need for a heartfelt school. A year later, located in Mysuru, we created a welcoming space for adults and children ready to embark on a journey of exploration with us.</p>
-      </div>
-      <div class="pull-card">
-        <p class="pull-text">A space where children explore freely, express themselves joyfully, and grow with ease.&rdquo;</p>
-      </div>
+    <span class="section-label">Our story</span>
+    <div class="about-body">
+      <p>Otesha was born out of a simple thought in 2025 - a need for a heartfelt school. A year later, located in Mysuru, we created a welcoming space for adults and children ready to embark on a journey of exploration with us.</p>
     </div>
-  </div>
-</div>
 
-<!-- THE PEOPLE -->
-<div class="section fade-up">
-  <div class="inner">
-    <span class="section-label">The People</span>
-    <h2>The hearts <em>behind Otesha</em></h2>
-    <div class="people-grid">
+    <div class="people-grid" id="people">
       <div class="person">
+        <div class="person-photo"><img src="images/Naveen.jpg" alt="Naveen"></div>
         <div class="person-name">Naveen</div>
         <p>Naveen is the founding member and trustee at Otesha. He is driven by a desire to create nurturing spaces where individuals can thrive.</p>
       </div>
       <div class="person">
+        <div class="person-photo"><img src="images/Varshini.jpg" alt="Varshini"></div>
         <div class="person-name">Varshini</div>
         <p>Varshini is the founding member and trustee at Otesha. She is the thoughtful mind behind the school&rsquo;s learning journey and is fascinated by the art of children and learning.</p>
       </div>
       <div class="person">
+        <div class="person-photo"><img src="images/Aishu.jpg" alt="Aishwarya"></div>
         <div class="person-name">Aishwarya</div>
-        <div class="person-aka">Fondly known as Aishu</div>
-        <p>The spark that set this journey in motion. Years ago, she said &ldquo;we must start a school&rdquo; and here we are! A founding member and an integral part of school, she is deeply involved in everyday practical areas at school.</p>
+        <p>Aishwarya is the spark that set this journey in motion. Years ago, she said &ldquo;we must start a school&rdquo; and here we are! A founding member and an integral part of school, she is deeply involved in everyday practical areas at school.</p>
       </div>
       <div class="person">
+        <div class="person-photo"><img src="images/Vivek.jpg" alt="Vivek"></div>
         <div class="person-name">Vivek</div>
-        <div class="person-aka">Fondly known as VK</div>
-        <p>The gentle hand and voice at school. As a founding member, he is always ready to step in wherever needed, carrying a spirit of service and care into every corner of school.</p>
+        <p>Vivek is the gentle hand and voice at school. As a founding member, he is always ready to step in wherever needed, carrying a spirit of service and care into every corner of school.</p>
       </div>
     </div>
   </div>
 </div>
+</div><!-- end watercolor-group -->
 
 <!-- OUR LEARNING JOURNEY -->
-<div class="section section-alt fade-up" id="learning">
+<div class="section fade-up" id="learning">
   <div class="inner">
-    <span class="section-label">Our Learning Journey</span>
+    <span class="section-label">Our learning journey</span>
 
     <!-- Approach -->
-    <span class="sub-label">Approach</span>
-    <p class="approach-highlight">At the heart of everything, is play</p>
     <div class="approach-wrap">
       <div class="approach-body">
+        <span class="sub-label" id="approach">Approach</span>
+        <p class="approach-highlight">At the heart of everything, is play.</p>
         <p>It is through play that young children wonder, question, experiment, and begin to understand their world. In these moments of curiosity and imagination, learning unfolds naturally.</p>
         <p class="approach-highlight">To us, play is where learning comes alive.</p>
-        <p>To learn more about how children learn at Otesha, read <a class="further-link" href="#how-children-learn">How children learn at Otesha &rarr;</a></p>
+        <p>To learn more, read <a class="further-link" href="articles/how-children-learn.html">How children learn at Otesha &rarr;</a></p>
+      </div>
+      <div class="approach-img">
+        <img src="images/Viha_Climbing.jpg" alt="A child climbing a tree at Otesha">
       </div>
     </div>
 
     <!-- Areas of Learning -->
-    <span class="sub-label sub-label-spaced">Areas of Learning</span>
+    <span class="sub-label sub-label-spaced" id="areas">Areas of learning</span>
     <p style="margin-bottom:2.5rem;">The areas of learning below are central to our early childhood programme. Through these experiences, children&rsquo;s holistic growth unfolds across interconnected areas.</p>
+    <div class="areas-layout">
     <div class="areas-grid">
       <div class="area">
         <div class="area-title">The Natural World</div>
@@ -149,12 +171,12 @@
       </div>
       <div class="area">
         <div class="area-title">Language</div>
-        <p>Language is woven into everyday life &mdash; through conversation, storytelling, songs, listening, reading, and writing. Children build confidence in expressing their thoughts and feelings while learning to listen with presence.</p>
+        <p>Language is woven into everyday life - through conversation, storytelling, songs, listening, reading, and writing. Children build confidence in expressing their thoughts and feelings while learning to listen with presence.</p>
       </div>
       <div class="area">
         <div class="area-title">Art &amp; Culture</div>
         <p>Through music, movement, craft, stories, and celebration, children explore creative expression and connect with culture. Art is one of their ways of understanding themselves and the world around them.</p>
-        <p style="margin-top:0.8rem;">To us, art is about the journey. We create to develop hands, eyes, and focus. As children grow, the work grows with them &mdash; beginning with simple drawing and clay modelling, and slowly expanding to handwork such as knitting and other crafts.</p>
+        <p style="margin-top:0.2rem;">To us, art is about the journey. We create to develop hands, eyes, and focus. As children grow, the work grows with them - beginning with simple drawing and clay modelling, and slowly expanding to handwork such as knitting and other crafts.</p>
       </div>
       <div class="area">
         <div class="area-title">Movement</div>
@@ -169,14 +191,17 @@
         <p>Daily tasks such as cooking, cleaning, caring for materials, and supporting one another help children develop independence, responsibility, and a sense of belonging within school.</p>
       </div>
     </div>
-  </div>
-</div>
+    <div class="areas-slideshow">
+      <img src="images/Nila_Flower.jpg" alt="Child with a flower" class="areas-slide active">
+      <img src="images/Viha_art.jpg" alt="Child making art" class="areas-slide">
+      <img src="images/By_the_lake.jpg" alt="By the lake" class="areas-slide">
+      <img src="images/Varsha_gudalur.jpg" alt="Varsha at Gudalur" class="areas-slide">
+    </div>
+    </div>
 
-<!-- DAILY RHYTHM -->
-<div class="section fade-up" id="rhythm">
-  <div class="inner">
-    <span class="section-label">The Daily Rhythm</span>
-    <h2>A day in the life of <em>a child at Otesha</em></h2>
+    <!-- Daily Rhythm -->
+    <span class="sub-label sub-label-spaced" id="rhythm">Daily rhythm</span>
+    <p style="margin-bottom:1rem;">A day in the life of a child at Otesha unfolds within the daily rhythm.</p>
     <div class="rhythm-sections">
 
       <div class="rhythm-block">
@@ -187,42 +212,40 @@
       </div>
 
       <div class="rhythm-block">
-        <div class="rhythm-label">Morning Circle</div>
+        <div class="rhythm-label">Morning circle</div>
         <div class="rhythm-body">
-          <p>All of us at school gather for a morning circle to begin our day. A time of songs, movement, and immersive art, with the seasons guiding our themes for each day.</p>
-          <p>The same songs come back week after week. Children know them by heart before long &mdash; and that knowing, that sense of something familiar, makes them feel at home.</p>
+          <p>All of us at school gather for a morning circle to begin our day. A time of songs, movement, and immersive art, with the seasons guiding our themes for each day. The same songs come back week after week. Children know them by heart before long - and that knowing, that sense of something familiar, makes them feel at home.</p>
         </div>
       </div>
 
       <div class="rhythm-block">
-        <div class="rhythm-label">Play-based Explorations</div>
+        <div class="rhythm-label">Free play</div>
         <div class="rhythm-body">
-          <p>As the morning unfolds, children move into a time of play-based exploration and practical work. During this time, they engage with the core areas of learning at school.</p>
-          <p>Through building, imagining, observing, and creating, children work with their head, heart, and hands.</p>
+          <p>As the morning unfolds, children engage in free play. Free play is self-initiated. Children may choose to play on their own or with others, creating their own games, stories and activities using imagination and creativity. Free play takes place both indoors and outdoors.</p>
           <div class="rhythm-sub">
             <div class="rhythm-sub-block">
-              <div class="rhythm-sub-title">Free Play</div>
-              <p>Self-initiated and open-ended. Children may choose to play on their own or with others, creating their own games, stories and activities using imagination and creativity.</p>
+              <div class="rhythm-sub-title">Indoor play</div>
+              <p>Children spend time indoors with simple, open-ended materials. They might build with blocks, engage in pretend play, or create their own small worlds and stories. The indoor space encourages focused play, allowing children&rsquo;s ideas and narratives to unfold naturally and at their own pace.</p>
             </div>
             <div class="rhythm-sub-block">
-              <div class="rhythm-sub-title">Daily Activities</div>
-              <p>Guided by adults. Children take part in hands-on experiences such as gardening, wet-on-wet painting, colouring, finger knitting, and working with clay.</p>
+              <div class="rhythm-sub-title">Outdoor play</div>
+              <p>There is generous time outdoors each day. In the open spaces, children climb, dig, balance, watch insects, build structures, and follow their curiosity. The natural world offers opportunities for exploration, allowing children to test their abilities, take small risks, and grow in confidence.</p>
             </div>
           </div>
         </div>
       </div>
 
       <div class="rhythm-block">
-        <div class="rhythm-label">Meal Times</div>
+        <div class="rhythm-label">Guided activities</div>
         <div class="rhythm-body">
-          <p>Snack and lunch are shared moments of enjoying good food cooked in the school kitchen. Children help prepare, serve, and tidy up.</p>
+          <p>Children then move into focused time for the day. During this time, they engage with the core areas of learning at school. Through building, imagining, observing, and creating, children work with their head, heart, and hands. These explorations are guided by adults. Children take part in hands-on experiences such as gardening, wet-on-wet painting, colouring, finger knitting, and working with clay.</p>
         </div>
       </div>
 
       <div class="rhythm-block">
-        <div class="rhythm-label">Outdoor Play</div>
+        <div class="rhythm-label">Meal times</div>
         <div class="rhythm-body">
-          <p>There is generous time outdoors each day. In the outdoors, children climb, dig, balance, watch insects, build structures, and follow their curiosity.</p>
+          <p>Snack and lunch are shared moments of enjoying good food cooked in the school kitchen. Children help prepare, serve, and tidy up.</p>
         </div>
       </div>
 
@@ -240,14 +263,13 @@
 <!-- PRACTICAL MATTERS -->
 <div class="section section-alt fade-up" id="practical">
   <div class="inner">
-    <span class="section-label">Practical Matters</span>
-    <h2>Things you&rsquo;d <em>like to know</em></h2>
+    <span class="section-label">Practical matters</span>
     <div class="practical-grid">
       <div>
         <div class="pblock">
           <h3>Age Group</h3>
           <p>The focus at school is early childhood education for ages 2 to 6, in a mixed-age setting.</p>
-          <p>Mixed-age groups mirror the way children have always learned &mdash; from each other. Younger children absorb the behaviour and capabilities of older ones through natural observation and imitation. Older children develop patience, confidence, and quiet leadership by being around those who are younger.</p>
+          <p>Mixed-age groups mirror the way children have always learned - from each other. Younger children absorb the behaviour and capabilities of older ones through natural observation and imitation. Older children develop patience, confidence, and quiet leadership by being around those who are younger.</p>
         </div>
         <div class="pblock">
           <h3>Campus</h3>
@@ -256,11 +278,7 @@
         </div>
         <div class="pblock">
           <h3>Food</h3>
-          <p>Simple, vegetarian meals are prepared each day, with menus that shift naturally alongside the seasons. A morning snack and lunch make up meal times. Children and adults participate together &mdash; preparing food, setting the table, and serving one another.</p>
-        </div>
-        <div class="pblock">
-          <h3>Transport</h3>
-          <p>At present, we do not offer transport facilities. As the school grows, we will consider introducing transport.</p>
+          <p>Simple, vegetarian meals are prepared each day, with menus that shift naturally alongside the seasons. A morning snack and lunch make up meal times. Children and adults participate together - preparing food, setting the table, and serving one another.</p>
         </div>
       </div>
       <div>
@@ -277,9 +295,8 @@
           </table>
         </div>
         <div class="pblock">
-          <h3>Gallery</h3>
-          <p>All photos from school life are stored and updated in our shared photo gallery.</p>
-          <a href="https://drive.google.com/drive/folders/1DhQpdgbWg2UwSrhsFp5RwukVP-1anLvq?usp=drive_link" target="_blank" class="further-link" style="margin-top:0.5rem;">View Gallery &rarr;</a>
+          <h3>Transport</h3>
+          <p>At present, we do not offer transport facilities. As the school grows, we will consider introducing transport.</p>
         </div>
       </div>
     </div>
@@ -290,9 +307,8 @@
 <div class="section fade-up" id="admissions">
   <div class="inner">
     <span class="section-label">Admissions</span>
-    <h2>Come <em>meet us</em></h2>
     <div class="admissions-wrap">
-      <p>If you would like to know more about us, do write to us &mdash; or, even better, come meet us in person. We would be happy to show you around the school, answer your questions, and explore the possibility of your child joining us on their journey here.</p>
+      <p>If you would like to know more about us, do write to us - or, even better, come meet us in person. We would be happy to show you around the school, answer your questions, and explore the possibility of your child joining us on their journey here.</p>
       <a href="mailto:office@otesha.com" class="contact-btn">Write to us</a>
       <span class="contact-or">or</span>
       <a href="tel:+919986016741" class="contact-btn">Call us</a>
@@ -303,8 +319,7 @@
 <!-- FURTHER READING -->
 <div class="section section-alt fade-up" id="further">
   <div class="inner">
-    <span class="section-label">Further Reading</span>
-    <h2>Going <em>deeper</em></h2>
+    <span class="section-label">Further reading</span>
     <div class="further-list">
       <a href="articles/how-children-learn.html" class="fr-link">
         <span class="fr-title">How children learn at Otesha</span>
@@ -336,36 +351,48 @@
 
 <!-- FOOTER -->
 <footer>
+  <!-- Hidden SVG for footer wavy clip-path -->
+  <svg width="0" height="0" style="position:absolute;">
+    <defs>
+      <clipPath id="footer-wave-clip" clipPathUnits="objectBoundingBox">
+        <path d="M0,0.05 C0.15,0 0.3,0.12 0.5,0.03 C0.7,0 0.85,0.1 1,0.04 L1,1 L0,1 Z"/>
+      </clipPath>
+    </defs>
+  </svg>
   <div class="footer-inner">
     <div class="footer-col">
-      <h4>Visit Us</h4>
+      <h4>Visit us</h4>
       <p>169, 2nd Main Rd, Medar Block,<br>Yadavagiri, Mysuru,<br>Karnataka 570020</p>
       <a href="https://maps.app.goo.gl/h4sqsJqiCJtzFZfG7" target="_blank" rel="noopener">View on Google Maps &rarr;</a>
     </div>
     <div class="footer-center">
-      <img src="images/otesha-logo-trimmed.png" alt="Otesha" class="footer-logo">
-      <p class="footer-tagline">To plant a seed and watch it grow &mdash; to nurture a dream.</p>
+      <img src="images/Otesha_Logo_Dark.png" alt="Otesha" class="footer-logo">
+      <p class="footer-copyright">&copy; 2026 Otesha. All rights reserved.</p>
     </div>
-    <div class="footer-col">
-      <h4>Get in Touch</h4>
+    <div class="footer-col" id="get-in-touch">
+      <h4>Get in touch</h4>
       <a href="mailto:office@otesha.in">office@otesha.in</a>
       <a href="tel:+919986016741">+91 99860 16741</a>
       <a href="tel:+919611982704">+91 96119 82704</a>
+      <a href="https://www.instagram.com/otesha_school/" target="_blank" rel="noopener" class="ig-link" aria-label="Otesha on Instagram">
+        <svg class="ig-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <a href="https://wa.me/919986016741" target="_blank" rel="noopener" class="ig-link" aria-label="Otesha on WhatsApp">
+        <svg class="ig-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.3L2 22l4.8-1.6A11 11 0 1 0 20.5 3.5z"/><path d="M8.5 8.5c0-.5.4-1 1-1h1c.4 0 .7.2.9.6l.8 1.8c.1.3.1.6-.1.9l-.6.8a8 8 0 0 0 3.4 3.4l.8-.6c.3-.2.6-.2.9-.1l1.8.8c.4.2.6.5.6.9v1c0 .6-.5 1-1 1A9 9 0 0 1 8.5 8.5z"/></svg>
+      </a>
     </div>
   </div>
-  <div class="footer-bottom">&copy; 2026 Otesha. All rights reserved.</div>
 </footer>
 
 <!-- ADMISSIONS POPUP -->
 <div class="popup-overlay" id="admPopup">
   <div class="popup-box">
     <button class="popup-close" id="popupClose" aria-label="Close">&times;</button>
-    <span class="section-label" style="margin-bottom: 0.5rem;">Admissions Open</span>
     <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 1.8rem; color: var(--dark-forest); margin-bottom: 0.6rem;">
-      Admissions for <em>June 2026</em> have started
+      Welcome to <em>Otesha!</em>
     </h2>
     <p style="font-size: 0.93rem; line-height: 1.8; opacity: 0.78; margin-bottom: 1.8rem;">
-      We are now accepting enquiries for the upcoming academic year. Come meet us, see the school, and explore the possibility of your child joining Otesha.
+      <strong>Our journey of starting a school in Mysore has begun.</strong><br><br>If you're curious, come by, say hello, have a glass of majjige and spend some time with us. We would be glad to show you around.
     </p>
     <a href="#admissions" class="contact-btn" id="popupCta">Get in touch</a>
   </div>
@@ -437,6 +464,6 @@
   });
 </script>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=20260409b"></script>
 </body>
 </html>
