@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "otesha-site",
-      "runtimeExecutable": "/usr/bin/ruby",
-      "runtimeArgs": ["/tmp/otesha_server.rb"],
+      "runtimeExecutable": "/bin/bash",
+      "runtimeArgs": ["/tmp/otesha_serve.sh"],
       "port": 8080
     }
   ]
