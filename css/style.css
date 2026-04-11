@@ -159,7 +159,7 @@ nav.scrolled {
 .hero-eyebrow-line { width: 28px; height: 1px; background: rgba(253,250,245,0.6); opacity: 0.6; }
 .hero-big {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 300; font-style: italic;
+  font-size: clamp(1.4rem, 3vw, 2.2rem); font-weight: 300; font-style: italic;
   color: rgba(253,250,245,0.94); line-height: 1.18;
   max-width: 760px; overflow: hidden;
 }
@@ -884,5 +884,5 @@ nav.open .nav-toggle span:nth-child(3) { transform: translateY(-10px) rotate(-45
 @media (max-width: 600px) {
   .people-grid { grid-template-columns: 1fr; }
   .areas-grid { max-width: 100%; }
-  .hero-big { font-size: 1.6rem; }
+  .hero-big { font-size: 1.2rem; }
 }
