@@ -71,7 +71,7 @@ nav.scrolled {
 }
 .nav-links a:hover { color: var(--terracotta) !important; }
 .nav-links a.nav-highlight {
-  color: var(--forest); font-weight: 500;
+  color: var(--forest);
 }
 
 /* Nav dropdown */
@@ -128,16 +128,16 @@ nav.scrolled {
 .hero-slide img {
   width: 100%; height: 100%; object-fit: cover; object-position: center 35%;
   transform: scale(1.05); transition: transform 9s ease;
-  filter: brightness(0.55) saturate(0.75);
+  filter: brightness(0.75) saturate(0.8);
 }
 .hero-slide.active img { transform: scale(1.0); }
 .hero-slide img.hero-bottom { object-position: center 80%; }
 .hero-tint {
   position: absolute; inset: 0; z-index: 2;
   background: linear-gradient(160deg,
-    rgba(44,74,46,0.25) 0%,
-    rgba(30,46,31,0.15) 50%,
-    rgba(30,46,31,0.55) 100%);
+    rgba(44,74,46,0.15) 0%,
+    rgba(30,46,31,0.08) 50%,
+    rgba(30,46,31,0.40) 100%);
 }
 .hero-content {
   position: absolute; inset: 0; z-index: 10;
@@ -159,7 +159,7 @@ nav.scrolled {
 .hero-eyebrow-line { width: 28px; height: 1px; background: rgba(253,250,245,0.6); opacity: 0.6; }
 .hero-big {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.4rem, 5.5vw, 4.2rem); font-weight: 300; font-style: italic;
+  font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 300; font-style: italic;
   color: rgba(253,250,245,0.94); line-height: 1.18;
   max-width: 760px; overflow: hidden;
 }
@@ -844,7 +844,8 @@ nav.open .nav-toggle span:nth-child(3) { transform: translateY(-10px) rotate(-45
   .hero-content { padding: 0 2rem 5rem; }
   .hero-controls { left: 2rem; right: 2rem; }
   .section { padding: 4.5rem 1.5rem; }
-  .about-grid, .approach-wrap, .practical-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .about-grid, .approach-wrap, .practical-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .practical-grid > div > .pblock:first-child { margin-top: 0; }
   .people-grid { grid-template-columns: 1fr 1fr; }
   .areas-grid { max-width: 100%; }
   .rhythm-sub { grid-template-columns: 1fr; }
@@ -883,5 +884,5 @@ nav.open .nav-toggle span:nth-child(3) { transform: translateY(-10px) rotate(-45
 @media (max-width: 600px) {
   .people-grid { grid-template-columns: 1fr; }
   .areas-grid { max-width: 100%; }
-  .hero-big { font-size: 2.2rem; }
+  .hero-big { font-size: 1.6rem; }
 }
