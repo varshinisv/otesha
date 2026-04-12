@@ -804,19 +804,8 @@ nav.open .nav-toggle span:nth-child(3) { transform: translateY(-10px) rotate(-45
 /* ─── RESPONSIVE ─── */
 @media (max-width: 900px) {
   nav { padding: 0 1rem 0 0.25rem; height: 66px; flex-wrap: nowrap; background: rgba(243,248,244,1); overflow: visible; }
-  .nav-botanical { display: none; }
-  nav::after {
-    content: '';
-    position: absolute;
-    bottom: -28px; left: 0; right: 0; height: 30px;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 375 30' preserveAspectRatio='none'%3E%3Cpath d='M0 0 L375 0 L375 8 C310 22 240 2 175 14 C110 26 50 6 0 16Z' fill='%23f3f8f4'/%3E%3C/svg%3E");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    z-index: 199;
-    pointer-events: none;
-  }
-  nav.open::after { display: none; }
+  .nav-botanical { display: block; height: 28px; }
+  nav.open .nav-botanical { display: none; }
   .nav-toggle { display: flex; }
   .nav-links {
     position: fixed; top: 66px; left: 0; right: 0; bottom: 0;
@@ -841,8 +830,10 @@ nav.open .nav-toggle span:nth-child(3) { transform: translateY(-10px) rotate(-45
   .nav-sub::before { display: none; }
   .nav-dropdown.sub-open .nav-sub { display: block; padding: 0.5rem 0 0 1rem; }
   .nav-dropdown:hover .nav-sub { transform: none; opacity: 1; visibility: visible; }
-  .hero-content { padding: 0 2rem 5rem; }
-  .hero-controls { left: 2rem; right: 2rem; }
+  .hero { height: 40vh; min-height: 260px; }
+  .hero-slide img { object-position: center center; }
+  .hero-content { padding: 0 2rem 3.5rem; }
+  .hero-controls { left: 2rem; right: 2rem; bottom: 1rem; }
   .section { padding: 4.5rem 1.5rem; }
   .about-grid, .approach-wrap, .practical-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .practical-grid > div > .pblock:first-child { margin-top: 0; }
